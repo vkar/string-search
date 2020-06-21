@@ -1,0 +1,31 @@
+{
+  "name": "stringSearch",
+  "description": "A library for finding substrings in a string",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Artemii Lazarenko",
+      "email": "a@toartemii.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=7.4",
+    "ext-fileinfo": "*",
+    "symfony/yaml": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "stringSearch\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "extra": {
+  }
+}

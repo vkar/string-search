@@ -1,0 +1,9 @@
+#IDE
+.idea
+
+#local test files
+test
+test.php
+
+#composer
+vendor
