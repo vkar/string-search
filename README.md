@@ -1,4 +1,4 @@
-#[Task](task.pdf)
+# [Task](task.pdf)
 
 # String Search 
 A library for finding substrings in a string. Has the ability to add various search engines. 
