@@ -1,5 +1,5 @@
 {
-  "name": "stringSearch",
+  "name": "scl/string-search",
   "description": "A library for finding substrings in a string",
   "type": "library",
   "license": "MIT",

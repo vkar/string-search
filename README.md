@@ -6,7 +6,7 @@ A library for finding substrings in a string. Has the ability to add various sea
 ## Install
 ### Install via subtree and composer
 Include like subtree to scl/tools directory of project
-Example: `git subtree add --squash --prefix=scl/composer/healthCheck git@gitlab.com:toartemii/string-search.git master`
+Example: `git subtree add --squash --prefix=scl/composer/string-search git@gitlab.com:toartemii/string-search.git master`
 
 ````composer
 {
@@ -35,21 +35,21 @@ $container->setSingleton(StringSearch::class, function () {
 ### Simple example: 
 ```php
 $containerStringSearch = new StringSearch();
-$result = $containerStringSearch->search('текст', 'test.txt');
+$result = $containerStringSearch->search('some text', 'test.txt');
 ```
 
 ### Select engine example: 
 Using search with **BOYER MOOR** engine
 ```php
 $containerStringSearch = new StringSearch();
-$result = $containerStringSearch->search('текст', 'test.txt', StringSearch::ENGINE_BOYER_MOOR);
+$result = $containerStringSearch->search('some text', 'test.txt', StringSearch::ENGINE_BOYER_MOOR);
 ```
 
 ### Setting custom config: 
 Using search with **BOYER MOOR** engine
 ```php
 $containerStringSearch = new StringSearch('/app/config.yml');
-$result = $containerStringSearch->search('текст', 'test.txt', StringSearch::DEFAULT_ENGINE);
+$result = $containerStringSearch->search('some text', 'test.txt', StringSearch::DEFAULT_ENGINE);
 ```
 
 example /app/config.yml
